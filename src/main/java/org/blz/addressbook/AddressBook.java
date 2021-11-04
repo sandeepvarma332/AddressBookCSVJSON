@@ -104,6 +104,20 @@ public class AddressBook {
         }
     }
 
+    public void delete() {
+        System.out.println("Enter your First name:");
+        String firstName = scan.next();
+
+        Iterator<Contacts> iterator = list.listIterator();
+        while (iterator.hasNext()) {
+            Contacts contacts = iterator.next();
+
+            if (firstName.equals(contacts.getFirstName())) {
+                list.remove(contacts);
+            }
+        }
+    }
+
     public void print() {
         Iterator<Contacts> it = list.iterator();
         while (it.hasNext()) {
