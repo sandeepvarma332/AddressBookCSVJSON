@@ -147,9 +147,12 @@ public class AddressBook {
     }
 
     public void countList() {
-        Long total;
-        total = list.stream().count();
+        Long total = list.stream().count();
         System.out.println(total);
+    }
+
+    public void sortByFirstName() {
+        Collections.sort(list, Sort.compareFirstName);
     }
 
     public void sortCity() {
