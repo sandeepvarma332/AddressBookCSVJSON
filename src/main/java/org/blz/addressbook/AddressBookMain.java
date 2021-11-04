@@ -7,5 +7,6 @@ public class AddressBookMain
     {
         System.out.println( "WELCOME TO ADDREES BOOK PROGRAM" );
         AddressBook addressBook=new AddressBook();
+        addressBook.operation();
     }
 }
